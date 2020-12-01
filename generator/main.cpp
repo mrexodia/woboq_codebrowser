@@ -327,7 +327,7 @@ int main(int argc, const char **argv) {
     llvm::cl::ParseCommandLineOptions(argc, argv);
 
 #ifdef _WIN32
-    make_forward_slashes(OutputPath._Get_data()._Myptr());
+    make_forward_slashes(OutputPath);
 #endif
 
     ProjectManager projectManager(OutputPath, DataPath);
